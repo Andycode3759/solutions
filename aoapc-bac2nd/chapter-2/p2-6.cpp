@@ -1,4 +1,3 @@
-//UNFINISHED
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -25,7 +24,7 @@ bool isGood(int &def, int &ghi) //顺便把def和ghi求出来
     */
 
     bool anotherBook[10];
-    for (int i = 0; i <= 9; i++)
+    for (int i = 1; i <= 9; i++)
     {
         anotherBook[i] = book[i];
     }
@@ -35,7 +34,7 @@ bool isGood(int &def, int &ghi) //顺便把def和ghi求出来
     anotherBook[g] = true;
     anotherBook[h] = true;
     anotherBook[i] = true;
-    for (int i = 0; i <= 9; i++)
+    for (int i = 1; i <= 9; i++)
     {
         if (!anotherBook[i])
             return false;
@@ -56,7 +55,7 @@ void dfs(int step)
         }
         return;
     }
-    for (int i = 0; i <= 9; i++)
+    for (int i = 1; i <= 9; i++)
     {
         if (!book[i])
         {

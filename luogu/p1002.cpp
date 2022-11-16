@@ -2,7 +2,12 @@
 //----!!BAD SOLUTION!!----//
     Reason:
         答案错误
-        6 6 3 3 => 1
+    Input:
+        6 6 3 3
+    Output:
+        1
+    Supposed to be:
+        6
 */
 #include <bits/stdc++.h>
 using namespace std;
