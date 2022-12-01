@@ -1,0 +1,11 @@
+/*
+//----!!BAD SOLUTION!!----//
+    Reason:
+        Wrong Answer
+    Input:
+        .
+    Output:
+        .
+    Expected:
+        .
+*/
