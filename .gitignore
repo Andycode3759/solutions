@@ -1,5 +1,6 @@
-input
-output
+input*
+output*
+*.in
 *.out
 *.exe
 .car_running
