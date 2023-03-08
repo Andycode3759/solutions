@@ -1,6 +1,4 @@
-/*
-//----^^ACCEPTED^^----//
-*/
+// AC
 #include <bits/stdc++.h>
 #define DEBUG_ON false
 #define deb(x)    \
@@ -10,7 +8,7 @@
     }
 using namespace std;
 
-//#define int long lon
+// #define int long lon
 long long dp[21][21];
 bool book[21][21] = {0}; // book[x][y] => (x,y) passed
 int n, m;                // destination

@@ -1,10 +1,4 @@
-/*
-//----!!BAD SOLUTION!!----//
-    Reason:
-        答案错误
-    Input:
-        42
-*/
+// WA
 public class Solution {
     public int MyAtoi(string s) {
         s=s.Trim();

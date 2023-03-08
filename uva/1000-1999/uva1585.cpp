@@ -1,13 +1,11 @@
-/*
-//----^^ACCEPTED^^----//
-*/
+// AC
 #include <bits/stdc++.h>
 using namespace std;
 int main()
 {
     int kases;
     scanf("%d", &kases);
-    getchar(); //吞掉\n
+    getchar(); // 吞掉\n
     for (int i = 0; i < kases; i++)
     {
         string str = "";

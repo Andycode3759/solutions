@@ -1,20 +1,21 @@
-/*
-//----!!BAD SOLUTION!!----//
-    Reason:
-        TLE
-*/
+// TLE
 #include <bits/stdc++.h>
 using namespace std;
-int n, m;          //终点坐标
-int ctrlPts[9][2]; //马及其控制点坐标
+int n, m;          // 终点坐标
+int ctrlPts[9][2]; // 马及其控制点坐标
 int answer = 0;
-bool book[21][21] = {0}; // book[x][y] => 当前路径中已经走过了(x,y)
+bool book[21][21] = {0};      // book[x][y] => 当前路径中已经走过了(x,y)
 const int CtrlPtDlt[9][2] = { // 控制点相对位置
-    {-2, -1}, {-2,  1}, {-1, -2}, 
-    { 0,  0}, {-1,  2}, { 1, -2}, 
-    { 1,  2}, { 2, -1}, { 2,  1}};
-const int Dir[2][2] = {{0, 1}, {1, 0}}; //向下走和向右走
-
+    {-2, -1},
+    {-2, 1},
+    {-1, -2},
+    {0, 0},
+    {-1, 2},
+    {1, -2},
+    {1, 2},
+    {2, -1},
+    {2, 1}};
+const int Dir[2][2] = {{0, 1}, {1, 0}}; // 向下走和向右走
 
 void calculateCtrlPts(int horseX, int horseY)
 {
@@ -63,7 +64,7 @@ int main()
 {
     int horseX, horseY;
     scanf("%d%d%d%d", &n, &m, &horseX, &horseY);
-    calculateCtrlPts(horseX, horseY); //计算马的控制点
+    calculateCtrlPts(horseX, horseY); // 计算马的控制点
     dfs(0, 0);
     printf("%d\n", answer);
     return 0;

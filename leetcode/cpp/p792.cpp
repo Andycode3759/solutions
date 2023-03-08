@@ -1,8 +1,4 @@
-/*
-//----!!BAD SOLUTION!!----//
-    Reason:
-        TLE
-*/
+// TLE
 #include <bits/stdc++.h> // local
 using namespace std;     // local
 

@@ -1,4 +1,4 @@
-//UNFINISHED
+// Unfinished
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -10,7 +10,7 @@ struct Gap
 
 int cmp(Gap a, Gap b)
 {
-    return b.dis - a.dis; //从大到小排序
+    return b.dis - a.dis; // 从大到小排序
 }
 
 vector<Gap> allGap;
@@ -33,7 +33,7 @@ int main()
     long long result = 0;
     for (int i = 0; i < m - 1; i++)
     {
-        result += allGap[i].dis; //最大的m-1段间隔
+        result += allGap[i].dis; // 最大的m-1段间隔
     }
     return 0;
 }

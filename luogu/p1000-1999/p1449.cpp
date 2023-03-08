@@ -1,6 +1,4 @@
-/*
-//----^^ACCEPTED^^----//
-*/
+// AC
 #include <bits/stdc++.h>
 #define EMPTY_STACK -2147483648
 using namespace std;

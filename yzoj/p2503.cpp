@@ -1,11 +1,4 @@
-/*
-//----!!BAD SOLUTION!!----//
-    Reason:
-        死循环
-    Input:
-        12 16
-        18 10
-*/
+// TLE
 #include <bits/stdc++.h>
 using namespace std;
 const int inf = 616616616;
