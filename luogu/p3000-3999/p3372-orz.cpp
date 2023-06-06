@@ -1,3 +1,4 @@
+// By @LgxTpre
 #include <cstdio>
 using namespace std;
 const int MAXN = 100005;
@@ -56,10 +57,7 @@ void add(int idx, int l, int r, int x)
         node.mark += x;
         return;
     }
-    if (node.mark != 0)
-    {
-        passDown(idx);
-    }
+    passDown(idx);
     int nmid = node.getMid();
     if (l <= nmid)
         add(idx * 2, l, r, x);
@@ -76,10 +74,7 @@ long long getSum(int idx, int l, int r)
         // printf("st[%d,%d]: %lld\n", node.l, node.r, node.sum);
         return node.sum;
     }
-    if (node.mark != 0)
-    {
-        passDown(idx);
-    }
+    passDown(idx);
     int nmid = node.getMid();
     long long res = 0;
     if (l <= nmid)
